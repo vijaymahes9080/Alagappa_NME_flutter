@@ -70,7 +70,7 @@ class CreditLedgerScreen extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: AppColors.seatGreen.withOpacity(0.15),
+                color: AppColors.seatGreen.withValues(alpha: 0.15),
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(color: AppColors.seatGreen),
               ),

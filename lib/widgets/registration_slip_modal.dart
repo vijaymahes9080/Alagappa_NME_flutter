@@ -67,7 +67,14 @@ class RegistrationSlipModal extends StatelessWidget {
                     data: registration.registrationNo,
                     version: QrVersions.auto,
                     size: 150.0,
-                    foregroundColor: AppColors.deepNavy,
+                    dataModuleStyle: const QrDataModuleStyle(
+                      dataModuleShape: QrDataModuleShape.square,
+                      color: AppColors.deepNavy,
+                    ),
+                    eyeStyle: const QrEyeStyle(
+                      eyeShape: QrEyeShape.square,
+                      color: AppColors.deepNavy,
+                    ),
                   ),
                   const SizedBox(height: 10),
                   Text(
@@ -90,7 +97,7 @@ class RegistrationSlipModal extends StatelessWidget {
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
                     decoration: BoxDecoration(
-                      color: AppColors.seatGreen.withOpacity(0.2),
+                      color: AppColors.seatGreen.withValues(alpha: 0.2),
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: const Text(

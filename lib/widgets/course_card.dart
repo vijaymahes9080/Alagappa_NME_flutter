@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../constants/app_colors.dart';
 import '../models/course.dart';
+import '../models/user.dart';
 import '../providers/auth_provider.dart';
 import '../providers/course_provider.dart';
 import '../providers/language_provider.dart';
@@ -33,7 +34,7 @@ class CourseCard extends StatelessWidget {
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
         side: BorderSide(
-          color: isRegistered ? AppColors.seatGreen : AppColors.royalBlue.withOpacity(0.15),
+          color: isRegistered ? AppColors.seatGreen : AppColors.royalBlue.withValues(alpha: 0.15),
           width: isRegistered ? 2 : 1,
         ),
       ),
@@ -48,7 +49,7 @@ class CourseCard extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: AppColors.royalBlue.withOpacity(0.1),
+                    color: AppColors.royalBlue.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(8),
                   ),
                   child: Text(
@@ -83,7 +84,7 @@ class CourseCard extends StatelessWidget {
             Text(
               course.description,
               maxLines: 2,
-              overflow: TextSpanOverflow.ellipsis,
+              overflow: TextOverflow.ellipsis,
               style: const TextStyle(fontSize: 13, height: 1.3),
             ),
             const SizedBox(height: 12),
@@ -104,7 +105,7 @@ class CourseCard extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                   decoration: BoxDecoration(
-                    color: AppColors.crimsonMaroon.withOpacity(0.1),
+                    color: AppColors.crimsonMaroon.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(6),
                   ),
                   child: Text(

@@ -29,7 +29,7 @@ class TimetableScreen extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                color: AppColors.royalBlue.withOpacity(0.1),
+                color: AppColors.royalBlue.withValues(alpha: 0.1),
                 borderRadius: BorderRadius.circular(16),
                 border: Border.all(color: AppColors.royalBlue),
               ),
@@ -57,7 +57,7 @@ class TimetableScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             Table(
-              border: TableBorder.all(color: AppColors.royalBlue.withOpacity(0.2), borderRadius: BorderRadius.circular(12)),
+              border: TableBorder.all(color: AppColors.royalBlue.withValues(alpha: 0.2), borderRadius: BorderRadius.circular(12)),
               children: [
                 TableRow(
                   decoration: const BoxDecoration(color: AppColors.royalBlue),
@@ -87,7 +87,7 @@ class TimetableScreen extends StatelessWidget {
                           height: 60,
                           margin: const EdgeInsets.all(2),
                           decoration: BoxDecoration(
-                            color: isScheduled ? AppColors.warmGold.withOpacity(0.3) : Colors.transparent,
+                            color: isScheduled ? AppColors.warmGold.withValues(alpha: 0.3) : Colors.transparent,
                             borderRadius: BorderRadius.circular(6),
                             border: isScheduled ? Border.all(color: AppColors.warmGold, width: 1.5) : null,
                           ),
@@ -110,7 +110,7 @@ class TimetableScreen extends StatelessWidget {
             const SizedBox(height: 20),
             if (enrolledCourse != null)
               Card(
-                color: AppColors.seatGreen.withOpacity(0.15),
+                color: AppColors.seatGreen.withValues(alpha: 0.15),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                   side: const BorderSide(color: AppColors.seatGreen),

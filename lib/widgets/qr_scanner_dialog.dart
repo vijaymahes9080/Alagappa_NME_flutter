@@ -86,7 +86,7 @@ class _QRScannerDialogState extends State<QRScannerDialog> {
                 padding: const EdgeInsets.all(12),
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  color: _scanResult.contains('VERIFIED') ? AppColors.seatGreen.withOpacity(0.15) : AppColors.seatRed.withOpacity(0.15),
+                  color: _scanResult.contains('VERIFIED') ? AppColors.seatGreen.withValues(alpha: 0.15) : AppColors.seatRed.withValues(alpha: 0.15),
                   borderRadius: BorderRadius.circular(10),
                   border: Border.all(
                     color: _scanResult.contains('VERIFIED') ? AppColors.seatGreen : AppColors.seatRed,

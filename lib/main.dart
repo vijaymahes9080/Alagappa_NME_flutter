@@ -48,7 +48,6 @@ class AlagappaNMEApp extends StatelessWidget {
           seedColor: AppColors.royalBlue,
           primary: AppColors.royalBlue,
           secondary: AppColors.warmGold,
-          background: AppColors.backgroundLight,
           surface: AppColors.cardLight,
         ),
         textTheme: textTheme,
@@ -62,7 +61,6 @@ class AlagappaNMEApp extends StatelessWidget {
           brightness: Brightness.dark,
           primary: AppColors.royalBlue,
           secondary: AppColors.warmGold,
-          background: AppColors.backgroundDark,
           surface: AppColors.cardDark,
         ),
         textTheme: textTheme.apply(bodyColor: AppColors.textLight, displayColor: AppColors.textLight),
@@ -92,7 +90,6 @@ class RootNavigator extends StatelessWidget {
       case UserRole.FACULTY:
         return const FacultyDashboardScreen();
       case UserRole.STUDENT:
-      default:
         return const StudentDashboardScreen();
     }
   }

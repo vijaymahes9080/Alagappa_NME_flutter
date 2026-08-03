@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../../constants/app_colors.dart';
 import '../../providers/course_provider.dart';
-import '../../providers/language_provider.dart';
 import '../../widgets/course_card.dart';
 import '../../widgets/voice_search_bar.dart';
 
@@ -12,7 +11,6 @@ class CourseCatalogScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final courseProvider = Provider.of<CourseProvider>(context);
-    final lang = Provider.of<LanguageProvider>(context);
 
     final departments = [
       {'id': 'ALL', 'name': 'All Depts'},

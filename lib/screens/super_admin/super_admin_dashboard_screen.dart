@@ -160,7 +160,7 @@ class _SuperAdminDashboardScreenState extends State<SuperAdminDashboardScreen> {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 10),
         decoration: BoxDecoration(
-          color: color.withOpacity(0.12),
+          color: color.withValues(alpha: 0.12),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(color: color),
         ),

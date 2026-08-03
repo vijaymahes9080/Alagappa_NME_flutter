@@ -51,12 +51,12 @@ class _VoiceSearchBarState extends State<VoiceSearchBar> {
         borderRadius: BorderRadius.circular(16),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.05),
+            color: Colors.black.withValues(alpha: 0.05),
             blurRadius: 10,
             offset: const Offset(0, 4),
           )
         ],
-        border: Border.all(color: AppColors.royalBlue.withOpacity(0.2)),
+        border: Border.all(color: AppColors.royalBlue.withValues(alpha: 0.2)),
       ),
       child: Row(
         children: [

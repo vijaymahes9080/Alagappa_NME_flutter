@@ -22,7 +22,6 @@ class _FacultyDashboardScreenState extends State<FacultyDashboardScreen> {
   Widget build(BuildContext context) {
     final auth = Provider.of<AuthProvider>(context);
     final courseProvider = Provider.of<CourseProvider>(context);
-    final lang = Provider.of<LanguageProvider>(context);
 
     final facultyCourse = courseProvider.courses.firstWhere(
       (c) => c.facultyId == auth.currentUser?.id,
@@ -181,7 +180,7 @@ class _FacultyDashboardScreenState extends State<FacultyDashboardScreen> {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          color: color.withOpacity(0.1),
+          color: color.withValues(alpha: 0.1),
           borderRadius: BorderRadius.circular(16),
           border: Border.all(color: color),
         ),

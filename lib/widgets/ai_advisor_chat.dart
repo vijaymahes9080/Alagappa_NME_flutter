@@ -117,7 +117,7 @@ class _AIAdvisorChatSheetState extends State<AIAdvisorChatSheet> {
                         bottomRight: !isBot ? Radius.zero : const Radius.circular(16),
                       ),
                       border: Border.all(
-                        color: isBot ? AppColors.warmGold.withOpacity(0.3) : Colors.transparent,
+                        color: isBot ? AppColors.warmGold.withValues(alpha: 0.3) : Colors.transparent,
                       ),
                     ),
                     child: Text(
