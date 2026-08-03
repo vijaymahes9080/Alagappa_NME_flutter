@@ -42,7 +42,7 @@ An enterprise-grade cross-platform **Flutter Mobile Application** engineered for
 ## 📁 Flutter Project Architecture
 
 ```
-d:\intership\alagappa_nme_flutter\
+alagappa_nme_flutter/
 ├── lib/
 │   ├── main.dart                          # App Entrypoint, Theme & Role-Based Navigator
 │   ├── constants/
@@ -109,9 +109,9 @@ The login screen features 1-tap demo buttons for instant previewing of all 4 rol
 
 ### Installation Steps
 
-1. **Navigate to the Flutter directory**:
+1. **Navigate to the repository directory**:
    ```bash
-   cd d:\intership\alagappa_nme_flutter
+   cd alagappa_nme_flutter
    ```
 
 2. **Install Flutter package dependencies**:
